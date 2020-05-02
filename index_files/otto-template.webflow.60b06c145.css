@@ -205,15 +205,21 @@ strong {
 }
 
 .hero {
-  min-height: 1100px;
+  min-height: 900px;
   padding-top: 170px;
   padding-right: 3%;
   padding-left: 3%;
   background-color: #f8faff;
   background-image: url("./forest.svg");
   background-position: 50% 0;
-  /*background-size: 100%;*/
   background-repeat: no-repeat;
+}
+
+.hero-home {
+  min-height: 910px;
+  background-image: url("./forest.svg"),
+                    linear-gradient(#342546 0%, #361184 59%, #49298B 59%, #49298B 94%, #160851 94%)
+                    ;
 }
 
 .navigation-container {
