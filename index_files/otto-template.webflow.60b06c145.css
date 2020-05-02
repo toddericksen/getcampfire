@@ -164,6 +164,14 @@ h5 {
   letter-spacing: -0.01em;
 }
 
+h4 span, h5 span  {
+  margin-top:5px;
+  display: block;
+  color: #7b88a8;
+  font-weight: normal;
+  font-size: 17px;
+}
+
 p {
   margin-bottom: 10px;
   color: #7b88a8;
@@ -1805,6 +1813,15 @@ strong {
 
 .home-page .title-wrap {
   margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.home-page .title-wrap h2 {
+  font-size: 48px;
+}
+
+.home-page h2 {
+  font-weight: 600;
 }
 
 .faq-question-bar {
@@ -2825,6 +2842,7 @@ strong {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  max-width:600px;
 }
 
 .job-card {
