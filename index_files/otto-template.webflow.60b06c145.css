@@ -216,6 +216,7 @@ strong {
 }
 
 .hero-home {
+  padding-top: 140px;
   min-height: 910px;
   background-image: url("./forest.svg"),
                     linear-gradient(#342546 0%, #361184 59%, #49298B 59%, #49298B 94%, #160851 94%)
@@ -514,6 +515,10 @@ strong {
 
 .content-section {
   padding: 100px 3%;
+}
+
+.home-page .content-section {
+  padding: 60px 3%;
 }
 
 .content-section.content-large {
@@ -1792,6 +1797,14 @@ strong {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+.title-wrap p {
+  max-width: 700px;
+  font-size: 19px;
+}
+
+.home-page .title-wrap {
+  margin-bottom: 20px;
 }
 
 .faq-question-bar {
@@ -3821,6 +3834,20 @@ strong {
   grid-template-rows: auto;
 }
 
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  opacity: 0.7;
+}
+
+.subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
 .counter-wrap {
   position: relative;
   z-index: 5;
@@ -5217,9 +5244,14 @@ strong {
     margin-left: auto;
   }
   .content-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
+
+  .home-page .content-section {
+    padding-bottom: 0px;
+  }
+
   .content-image-wrapper {
     padding: 0px;
   }
