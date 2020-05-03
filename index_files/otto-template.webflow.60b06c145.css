@@ -226,10 +226,19 @@ strong {
 .hero-home {
   padding-top: 140px;
   min-height: 910px;
+  /*background-image: url("./forest.svg"),
+                    linear-gradient(#342546 0%, #361184 59%, #49298B 59%, #49298B 94%, #160851 94%);
+  */
   background-image: url("./forest.svg"),
-                    linear-gradient(#342546 0%, #361184 59%, #49298B 59%, #49298B 94%, #160851 94%)
-                    ;
+                    linear-gradient(#2A283A 0%, #A93561 60.5%, #854065 59%, #733B59 98%, #2F2652 94%);
 }
+
+
+
+.home-page .hero-home + .content-section {
+  padding: 0px;
+}
+
 
 .navigation-container {
   display: -webkit-box;
@@ -1449,8 +1458,8 @@ strong {
 
 .footer-grid {
   width: 100%;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 2fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  -ms-grid-columns: 1fr 3fr 3fr;
+  grid-template-columns: 1fr 3fr 3fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -2768,6 +2777,15 @@ strong {
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+}
+a.book {
+  transition: all .2s ease-out;
+}
+a.book:hover {
+  transition: all .2s ease-out;
+  transform: scale(1.05); 
+  border-radius: 32px;
+  box-shadow: -4px 0 40px rgba(0,0,50,.05)
 }
 
 .value-card {
@@ -5265,6 +5283,7 @@ strong {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
 
   .home-page .content-section {
     padding-bottom: 0px;
