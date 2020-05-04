@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0033)https://otto-template.webflow.io/ -->
-<html data-wf-domain="otto-template.webflow.io" data-wf-page="5e7adffc6e755acdada7d515" data-wf-site="5e7adffc6e755a6bb3a7d516" class="w-mod-js w-mod-ix wf-dmsans-n4-active wf-dmsans-n5-active wf-dmsans-n7-active wf-active">
+<html class="w-mod-js w-mod-ix wf-dmsans-n4-active wf-dmsans-n5-active wf-dmsans-n7-active wf-active">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Otto - Webflow HTML Website Template</title>
@@ -422,8 +421,10 @@
                           <div id="w-node-b337b8f5dfa3-b8f5df7e" class="footer-column">
                             <div class="footer-text">Stay informed about Campfire and get content about books, connection, and facilitation.</div>
                             <div class="form-block w-form">
-                              <form id="email-form" name="email-form" data-name="Email Form" class="form">
-                                <input type="email" class="text-field-find w-input" maxlength="256" name="Footer-Email-Name" data-name="Footer Email Name" placeholder="Enter your email" id="Footer-Email-Name" required="">
+                              <form id="email-form-footer" name="email-form-footer" class="form" action="https://bookclub.ngrok.io/website_visitors" accept-charset="UTF-8" method="post">
+                                
+                                <input type="email" class="text-field-find w-input" maxlength="256" data-name="Email" placeholder="Email*" name="website_visitor[email]" id="website_visitor_email">
+                                <input type="hidden" value="true" name="website_visitor[subscriber]" id="website_visitor_subscriber">
                                 <input type="submit" value="Subscribe" data-wait="Please wait..." class="subscribe-button w-button">
                               </form>
                               <div class="success-message w-form-done">
@@ -440,7 +441,7 @@
                           <div class="social-links">
                             
                             <a href="https://www.instagram.com/getcampfire/?hl=en" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755ab49aa7d556_instagram.svg" alt=""></a>
-                            <!-- <a href="https://otto-template.webflow.io/#" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755a27a8a7d554_facebook.svg" alt=""></a> -->
+                            <a href="#" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755a27a8a7d554_facebook.svg" alt=""></a>
                             <a href="https://www.linkedin.com/company/getcampfire/" class="social-link w-inline-block"><img src="./index_files/linkedin.svg" alt=""></a>
                           </div>
                         </div>

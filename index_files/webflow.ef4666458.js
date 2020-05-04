@@ -7133,12 +7133,10 @@
             p = ".w-form",
             v = /e(-)?mail/i,
             E = /^\S+@\S+$/,
-            h = window.alert,
+            h = window,
             _ = i.env(),
             g = /list-manage[1-9]?.com/i,
-            I = e.debounce(function() {
-                h("Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.")
-            }, 100);
+            I = e.debounce(function() {});
 
         function T(e, n) {
             var r = t(n),
