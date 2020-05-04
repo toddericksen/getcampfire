@@ -211,25 +211,28 @@ strong {
 }
 
 .hero {
-  min-height: 900px;
-  padding-top: 170px;
+  height: 1050px;
   padding-right: 3%;
   padding-left: 3%;
+  padding-bottom: 0;
   background-color: #f8faff;
-  background-image: url("./forest.svg");
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("./forest-bg.svg");
+  background-position: top left;
+  background-repeat: repeat;
 }
 
 .hero-home {
-  padding-top: 140px;
-  min-height: 910px;
+  height: 1050px;
   /*background-image: url("./forest.svg"),
                     linear-gradient(#342546 0%, #361184 59%, #49298B 59%, #49298B 94%, #160851 94%);
   */
-  background-image: url("./forest.svg"),
-                    linear-gradient(#2A283A 0%, #A93561 60.5%, #854065 59%, #733B59 98%, #2F2652 94%);
+  /*background-image: url("./forest.svg"),
+                    linear-gradient(#242437 0%, #A93561 62%, #723C59 62%, #733B59 94%, #2F2652 94%);
+  */
+  background-image: url("./forest.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 175px;
 }
 
 
@@ -306,7 +309,7 @@ strong {
 }
 
 .hero-details {
-  max-width: 690px;
+  max-width: 600px;
   color: #7b88a8;
   font-size: 18px;
   line-height: 1.45;
