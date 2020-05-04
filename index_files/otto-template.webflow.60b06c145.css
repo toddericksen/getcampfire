@@ -3756,6 +3756,75 @@ a.book:hover {
   grid-template-rows: auto;
 }
 
+.cf-pricing-grid {
+  width: 100%;
+  max-width: 990px;
+  grid-column-gap: 36px;
+  grid-row-gap: 36px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.cf-pricing-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 320px;
+  min-width: 180px;
+  padding: 72px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-radius: 32px;
+  background-color: #fff;
+  box-shadow: 1px 1px 57px 0 rgba(123, 136, 168, 0.08);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.cf-pricing-card .paragraph-large {
+  text-align: center;
+  width: 100%;
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.cf-pricing-card a.w-button {
+  margin: 48px auto 0;
+
+}
+
+ul.pricing-package {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.pricing-package li {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+ul.pricing-package span {
+  font-weight: 500;
+  display: block;
+  font-size: 17px;
+  color:#2d3958 ;
+}
+
 .feature-card {
   display: -webkit-box;
   display: -webkit-flex;
