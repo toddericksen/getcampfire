@@ -339,6 +339,10 @@ strong {
   align-items: center;
   text-align: center;
 }
+.contact .title-centre {
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
 
 .button-wrapper {
   display: -webkit-box;
@@ -2445,6 +2449,7 @@ strong {
   min-height: 599px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 100px;
   padding: 55px;
   border-radius: 24px;
   background-color: #fff;
@@ -5927,6 +5932,8 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 991px) {
+
+
   #w-node-113117ec16f0-ada7d515 {
     -ms-grid-column-align: center;
     justify-self: center;
@@ -6150,6 +6157,18 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 767px) {
+  .hero-home .display-heading{
+    font-size: 32px;
+  }
+  .home-page .title-wrap h2, .home-page h2, h2 {
+    font-size: 32px;
+  }
+
+  .cf-pricing-grid {
+    -ms-grid-columns: 1fr ;
+    grid-template-columns: 1fr;
+}
+
   #w-node-d401e73f0ea5-ada7d515 {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
@@ -6160,7 +6179,7 @@ ul.pricing-package span {
     -ms-grid-column-span: 2;
     grid-column-end: span 2;
   }
-  #w-node-7dc5b5ee9d91-b8f5df7e {
+  #w-node-7dc5b5ee9d91-b8f5df7e, #w-node-7dc5b5ee9d91-b8f5df7ee {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
     -ms-grid-row-span: 1;
@@ -6311,6 +6330,7 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 479px) {
+
   #w-node-d401e73f0ea5-ada7d515 {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
