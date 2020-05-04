@@ -56,6 +56,9 @@
                 <div class="w-form-done">
                     <div>Thank you! We recieved your message and will reach out shortly.</div>
                   </div>
+                  <div class="w-form-subscribed">
+                    <div>Thank you! You've been subscribed!</div>
+                  </div>
                   <div class="w-form-fail">
                     <div>Oops! Something went wrong while submitting the form.</div>
                   </div>
@@ -109,6 +112,9 @@
                               <div class="success-message w-form-done">
                                 <div>Thank you! Your submission has been received!</div>
                               </div>
+                              <div class="success-message w-form-subscribed">
+                                <div>Thank you! You've been subscribed!</div>
+                              </div>
                               <div class="error-message w-form-fail">
                                 <div>Oops! Something went wrong while submitting the form.</div>
                               </div>
@@ -148,6 +154,10 @@
         $(function(){
           if (GetURLParameter("status") == "success") {
             $(".w-form-done").show()
+          }
+
+          if (GetURLParameter("status") == "subscribed") {
+            $(".w-form-subscribed").show()
           }
 
           
