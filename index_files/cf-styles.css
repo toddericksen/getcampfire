@@ -211,18 +211,17 @@ strong {
 }
 
 .hero {
-  height: 1050px;
-  padding-right: 3%;
-  padding-left: 3%;
   padding-bottom: 0;
   background-color: #f8faff;
   background-image: url("./forest-bg.svg");
-  background-position: top left;
+  background-position: top center;
   background-repeat: repeat;
+  max-height: 1050px;
 }
 
 .hero-home {
-  height: 1050px;
+  padding-right: 3%;
+  padding-left: 3%;
   /*background-image: url("./forest.svg"),
                     linear-gradient(#342546 0%, #361184 59%, #49298B 59%, #49298B 94%, #160851 94%);
   */
@@ -231,8 +230,9 @@ strong {
   */
   background-image: url("./forest.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   padding-top: 175px;
+  height: 1050px;
 }
 
 
@@ -4680,6 +4680,7 @@ ul.pricing-package span {
   line-height: 1.2;
   text-align: center;
 }
+
 
 @media screen and (max-width: 991px) {
   .navbar {
