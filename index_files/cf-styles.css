@@ -1261,7 +1261,7 @@ strong {
 }
 
 .nav-link:hover {
-  color: #7703AE;
+  color: #FEA674;
 }
 
 .nav-link.w--current {
@@ -2435,8 +2435,8 @@ strong {
 }
 
 .hero-contact {
-  min-height: 840px;
-  padding-top: 170px;
+  min-height: 400px;
+  padding-top: 20px;
   padding-right: 3%;
   padding-left: 3%;
   background-color: #fef1f2;
@@ -2733,7 +2733,7 @@ strong {
 
 .contact-wrap {
   position: relative;
-  top: -430px;
+  top: -100px;
 }
 
 .company-image-01 {
@@ -4738,7 +4738,7 @@ ul.pricing-package span {
     grid-template-columns: 1fr 1fr;
   }
   .nav-menu {
-    background-color: #fff;
+    background-color: #7703AE;
   }
   .cta-container {
     -webkit-box-orient: vertical;
@@ -4823,8 +4823,8 @@ ul.pricing-package span {
     grid-template-columns: 1fr 1fr;
   }
   .hero-contact {
-    min-height: 800px;
-    padding-top: 150px;
+    min-height: 400px;
+    padding-top: 20px;
   }
   .platform-subscribed {
     margin-bottom: 40px;
@@ -5552,7 +5552,7 @@ ul.pricing-package span {
   .hero-home {
     padding-top: 220px;
   }
-  .hero-home .display-heading{
+  .display-heading{
     font-size: 38px;
   }
   .home-page .title-wrap h2, .home-page h2, h2 {

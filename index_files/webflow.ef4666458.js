@@ -11850,9 +11850,9 @@ Webflow.require('ix2').init({
                             "useEventTarget": true,
                             "id": "8e7d6612-01c7-9bb0-1b73-9c98c9ce27b9"
                         },
-                        "rValue": 255,
-                        "gValue": 255,
-                        "bValue": 255,
+                        "rValue": 0,
+                        "gValue": 0,
+                        "bValue": 0,
                         "aValue": 1
                     }
                 }]
