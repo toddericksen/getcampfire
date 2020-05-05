@@ -231,8 +231,8 @@ strong {
   background-image: url("./forest.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  padding-top: 175px;
   height: 1050px;
+  padding-top: 175px;
 }
 
 
@@ -4684,7 +4684,7 @@ ul.pricing-package span {
 
 @media screen and (max-width: 991px) {
   .navbar {
-    background-color: hsla(0, 0%, 100%, 0);
+    background-color: #182135;
   }
   .dashboard-wrapper {
     margin-top: 0px;
