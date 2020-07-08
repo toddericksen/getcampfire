@@ -219,6 +219,12 @@ strong {
   max-height: 1050px;
 }
 
+.hero-antiracist {
+  color: #fff;
+  padding-bottom: 0;
+  background-color: #182134;
+}
+
 .hero-home {
   padding-right: 3%;
   padding-left: 3%;
@@ -235,9 +241,25 @@ strong {
   padding-top: 175px;
 }
 
+.antiracist {
+  padding: 175px 3% 50px;
+}
+
+.book-title {
+  margin-bottom: 10px;
+}
+
+.antiracist-book-cover {
+  left: 70px;
+    top: 50px;
+}
+
+.book-stack {
+  margin-right: 30px;
+}
 
 
-.home-page .hero-home + .content-section {
+.home-page .hero-home + .content-section, .home-page .hero-antiracist + .content-section {
   padding: 0px;
 }
 
@@ -303,6 +325,12 @@ strong {
 }
 
 .hero-home .display-heading {
+  font-size: 58px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.antiracist .display-heading {
   font-size: 58px;
   color: #fff;
   margin-bottom: 18px;
@@ -5564,7 +5592,7 @@ ul.pricing-package span {
   .customer-wrap {
     height: 580px;
   }
-  .hero-home {
+  .hero-home, .hero-antiracist {
     padding-top: 220px;
   }
   .display-heading{
