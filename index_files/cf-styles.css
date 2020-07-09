@@ -272,7 +272,7 @@ strong {
 .download-success {
   font-size: 14px;
   display: none;
-  background: rgba(187,58,248,.35);
+  background: #743698;
   padding: 15px 20px 20px;
   text-align: center;
   color: #fff;
@@ -281,7 +281,7 @@ strong {
   left: calc(50% - 350px);
   width: 700px;
   max-width: 100%;
-  z-index: 1001;
+  z-index: 1002;
   border-radius: 0 0 5px 5px;
 }
 
