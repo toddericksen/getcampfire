@@ -5356,6 +5356,10 @@ ul.pricing-package span {
     width: 90%;
     left: 5%;
   }
+  .download-success {
+    left: 5%;
+    width: 90%;
+  }
 
   .guide-page .navbar {
     background-color: #fff;
