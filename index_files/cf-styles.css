@@ -296,6 +296,7 @@ strong {
   right: 0;
   visibility: hidden;
   z-index: -1;
+  overflow: scroll
 }
 
 .form_popup.active {
@@ -5355,6 +5356,8 @@ ul.pricing-package span {
   .popup_content {
     width: 90%;
     left: 5%;
+    top: 5%;
+    margin-bottom: 200px;
   }
   .download-success {
     left: 5%;
@@ -5847,6 +5850,16 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 479px) {
+  #intro {
+      margin-top: 160px;
+    }
+    .container {
+      width: 90%;
+    }
+    .feature-grid p {
+      font-size: 14px;
+    }
+
   h1 {
     font-size: 42px;
   }
