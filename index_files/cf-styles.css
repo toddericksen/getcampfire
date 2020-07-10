@@ -310,7 +310,7 @@ strong {
   height: 70%;
   padding: 40px;
   top: 40px;
-  left: calc(50% - 400px);
+  left: calc(50% - 200px);
   overflow: scroll;
   border-radius: 5px;
 }
