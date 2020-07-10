@@ -307,7 +307,7 @@ strong {
   background: #fff;
   position: absolute;
   width: 800px;
-  height: 100%;
+  height: auto;
   padding: 40px;
   top: 40px;
   left: calc(50% - 400px);
@@ -5348,6 +5348,24 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 767px) {
+  #intro {
+      margin-top: 120px;
+    }
+
+  .popup_content {
+    width: 90%;
+    left: 5%;
+  }
+
+  .guide-page .navbar {
+    background-color: #fff;
+  }
+  
+  .antiracist-book-cover {
+    left: 0px;
+    top: 0px;
+  }
+
   .navbar {
     background-color: #182135;
   }
@@ -5855,6 +5873,7 @@ ul.pricing-package span {
   .home-page .content-section {
     padding-bottom: 0px;
   }
+
 
   .content-image-wrapper {
     padding: 0px;
@@ -6426,6 +6445,7 @@ ul.pricing-package span {
 
 
 @media screen and (max-width: 479px) {
+
 
   #w-node-d401e73f0ea5-ada7d515 {
     -ms-grid-row: span 1;
