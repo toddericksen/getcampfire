@@ -296,6 +296,7 @@ strong {
   right: 0;
   visibility: hidden;
   z-index: -1;
+  overflow: scroll
 }
 
 .form_popup.active {
@@ -306,8 +307,8 @@ strong {
 .popup_content {
   background: #fff;
   position: absolute;
-  width: 500px;
-  height: 70%;
+  width: 800px;
+  height: auto;
   padding: 40px;
   top: 40px;
   left: calc(50% - 200px);
@@ -5348,6 +5349,31 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 767px) {
+  #intro {
+      margin-top: 120px;
+    }
+
+  .popup_content {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    margin-bottom: 200px;
+  }
+  
+  .download-success {
+    left: 5%;
+    width: 90%;
+  }
+
+  .guide-page .navbar {
+    background-color: #fff;
+  }
+  
+  .antiracist-book-cover {
+    left: 0px;
+    top: 0px;
+  }
+
   .navbar {
     background-color: #182135;
   }
@@ -5825,6 +5851,16 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 479px) {
+  #intro {
+      margin-top: 160px;
+    }
+    .container {
+      width: 90%;
+    }
+    .feature-grid p {
+      font-size: 14px;
+    }
+
   h1 {
     font-size: 42px;
   }
@@ -5855,6 +5891,7 @@ ul.pricing-package span {
   .home-page .content-section {
     padding-bottom: 0px;
   }
+
 
   .content-image-wrapper {
     padding: 0px;
@@ -6426,6 +6463,7 @@ ul.pricing-package span {
 
 
 @media screen and (max-width: 479px) {
+
 
   #w-node-d401e73f0ea5-ada7d515 {
     -ms-grid-row: span 1;
