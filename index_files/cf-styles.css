@@ -5364,7 +5364,7 @@ ul.pricing-package span {
     top: 5%;
     margin-bottom: 200px;
   }
-  
+
   .download-success {
     left: 5%;
     width: 90%;
@@ -5373,7 +5373,7 @@ ul.pricing-package span {
   .guide-page .navbar {
     background-color: #fff;
   }
-  
+
   .antiracist-book-cover {
     left: 0px;
     top: 0px;
@@ -6230,6 +6230,38 @@ ul.pricing-package span {
   .customer-wrap {
     height: 490px;
   }
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }
 
 #w-node-92d9639f90c9-ada7d515 {
