@@ -427,6 +427,16 @@ strong {
   align-items: center;
   text-align: center;
 }
+
+/*.title-centre h1 {
+  opacity: 0;
+  transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transition: all 2000ms ease;
+  -webkit-transition: all 2000ms ease;
+  -webkit-transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  
+}
+*/
 .contact .title-centre {
   max-width: 600px;
   margin: 0 auto 48px;
@@ -1401,7 +1411,7 @@ strong {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #4317c0;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.1;
 }
 
@@ -1643,11 +1653,6 @@ strong {
   padding-left: 3%;
 }
 
-.pricing-container {
-  border-radius: 42px;
-  background-color: #fff;
-  box-shadow: -10px 117px 118px 0 rgba(206, 212, 224, 0.12);
-}
 
 .pricing-grid {
   padding-right: 2%;
