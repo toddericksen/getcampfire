@@ -216,7 +216,7 @@ strong {
   background-image: url("./forest-bg.svg");
   background-position: top center;
   background-repeat: repeat;
-  max-height: 1050px;
+  max-height: 940px;
 }
 
 .hero-antiracist {
@@ -238,7 +238,8 @@ strong {
   background-repeat: no-repeat;
   background-position: center center;
   height: 1050px;
-  padding-top: 175px;
+  padding-top: 225px;
+
 }
 
 .antiracist {
@@ -634,11 +635,11 @@ strong {
 }
 
 .content-section {
-  padding: 100px 3%;
+  padding: 100px 3% 0;
 }
 
 .home-page .content-section {
-  padding: 60px 3%;
+  padding: 100px 3% 0;
 }
 
 .content-section.content-large {
