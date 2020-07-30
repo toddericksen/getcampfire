@@ -130,7 +130,7 @@ h2 {
   margin-bottom: 24px;
   font-size: 40px;
   line-height: 1.15;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.125rem;
 }
 
@@ -2214,13 +2214,14 @@ strong {
   width: 100%;
 }
 
+
 .hero-default, .hero-why {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-height: 530px;
-  padding: 170px 3% 140px;
+  padding: 140px 3% 140px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -2231,6 +2232,8 @@ strong {
   background-size: 1490px;
   background-repeat: no-repeat;
 }
+
+
 
 .change-log-wrap {
   display: -webkit-box;
@@ -2601,10 +2604,9 @@ strong {
 }
 
 .hero-why {
-  padding-top: 20px;
   padding-right: 3%;
   padding-left: 3%;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
   background-color: #f3efff;
   background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755ac61da7d5ca_Wave%20Purple.svg");
   background-position: 60% 10%;
@@ -4269,7 +4271,7 @@ ul.pricing-package span {
   margin-right: auto;
   margin-left: auto;
   border-radius: 36px;
-  background-color: #fef1f2;
+  background-color: #FEF1F7;
   background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755a3293a7d5ce_Wave%20-%20Salmon.svg");
   background-position: 0% 50%;
   background-size: 220%;
@@ -4287,6 +4289,12 @@ ul.pricing-package span {
   background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755a0594a7d5d5_Wave%20-%20Blue.svg");
   background-position: 50% 100%;
 }
+
+.bg-step.bg-step-04 {
+  background-color: #fef1f2;
+  background-position: 50% 100%;
+}
+
 
 .line {
   position: absolute;
@@ -4437,6 +4445,13 @@ ul.pricing-package span {
 .title {
   margin-bottom: 20px;
   color: #7703AE;
+}
+
+.hero-teams {
+  background-color: #FEF1F7;
+  background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755a3293a7d5ce_Wave%20-%20Salmon.svg");
+  background-position: 0% 50%;
+  background-size: 220%;
 }
 
 .hero-blog {
