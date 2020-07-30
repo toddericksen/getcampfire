@@ -1648,6 +1648,75 @@ strong {
   background-color: #182135;
 }
 
+
+.solution-options-section {
+  position: relative;
+  padding-right: 3%;
+  padding-bottom: 60px;
+  padding-left: 3%;
+}
+
+.solution-options-grid {
+  text-align: center;
+}
+
+
+.solution-options-grid .cell {
+  display: inline-block;
+  width: 100%;
+  max-width: 375px;
+  background:#F6f6f6;
+  vertical-align: top;
+  min-height: 425px;
+  padding: 4rem 3.5rem;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.solution-options-grid .cell.primary {
+  background-color: #7703AE;
+/*  background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755aaf4ba7d543_Pattern%20Shape.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+*/  color:#fff;
+}
+
+.solution-options-grid .solution-type {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.025rem;
+  font-weight: 800;
+  opacity: .9;
+}
+
+.solution-options-grid .solution-description {
+  margin: 1.5rem 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+}
+
+.solution-options-grid .solution-support {
+  margin-bottom: 2rem;
+  opacity: .75;
+  line-height: 1.25;
+  font-size: 1.2rem;
+}
+
+.solution-options-grid .solutions-link, .singleton-link {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.solution-options-grid .primary a.solutions-link {
+  color:#fff;
+}
+
+
+
+
 .pricing-section {
   position: relative;
   padding-right: 3%;
@@ -2529,6 +2598,25 @@ strong {
   border-radius: 100px;
   background-color: #fff;
   box-shadow: 1px 1px 42px 44px rgba(188, 196, 218, 0.12);
+}
+
+.hero-why {
+  padding-top: 20px;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 5rem;
+  background-color: #fef1f2;
+  background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755a2e14a7d59b_Hero%20Wave%20Contact.svg");
+  background-position: 50% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-why .container {
+  padding-top: 15px;
+}
+
+.hero-why .title-centre {
+  padding-top: 40px;
 }
 
 .hero-contact {
