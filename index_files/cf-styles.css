@@ -1693,9 +1693,9 @@ strong {
 .solution-options-grid .solution-description {
   margin: 1.5rem 0;
   font-size: 1.75rem;
-  line-height: 1;
+  line-height: 1.1;
   font-weight: 500;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.075rem;
 }
 
 .solution-options-grid .solution-support {
@@ -2214,7 +2214,7 @@ strong {
   width: 100%;
 }
 
-.hero-default {
+.hero-default, .hero-why {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2605,12 +2605,11 @@ strong {
   padding-right: 3%;
   padding-left: 3%;
   padding-bottom: 5rem;
-  background-color: #fef1f2;
-  background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755a2e14a7d59b_Hero%20Wave%20Contact.svg");
   background-position: 50% 70%;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .hero-why .container {
   padding-top: 15px;
 }
