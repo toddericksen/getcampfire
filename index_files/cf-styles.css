@@ -2605,9 +2605,10 @@ strong {
   padding-right: 3%;
   padding-left: 3%;
   padding-bottom: 5rem;
-  background-position: 50% 70%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #f3efff;
+  background-image: url("https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755ac61da7d5ca_Wave%20Purple.svg");
+  background-position: 60% 10%;
+  background-size: 130%;
 }
 
 .hero-why .container {
