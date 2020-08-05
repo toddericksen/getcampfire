@@ -1437,9 +1437,9 @@ strong.emphasis {
 .cta-form .form {
   width: 100%;
   background: #fff;
-    padding: 4rem;
-    border-radius: 11px;
-    margin: 4rem 0 0;
+  padding: 3rem;
+  border-radius: 11px;
+  margin: 4rem 0 0;
 }
 .cta-form .form .input {
   margin-bottom: 1rem ;
