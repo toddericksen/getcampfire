@@ -1435,6 +1435,7 @@ strong.emphasis {
     width: 100%;
   }
 .cta-form .form {
+  width: 100%;
   background: #fff;
     padding: 4rem;
     border-radius: 11px;
