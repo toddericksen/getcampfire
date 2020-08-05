@@ -1434,8 +1434,10 @@ strong.emphasis {
     text-align: center;
     width: 100%;
   }
+.cta-form .form {
+  background: #fff;
+}
 
-  
 .div-block-6 {
   width: 50%;
 }
