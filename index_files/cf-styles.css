@@ -1446,7 +1446,8 @@ strong.emphasis {
   display: block;
 }
 .hs-form fieldset {
-max-width: none!important;
+  max-width: none!important;
+  margin-bottom: 1rem;
 }
 .cta-form .form .input {
   margin-bottom: 1rem ;
