@@ -1441,6 +1441,10 @@ strong.emphasis {
   border-radius: 11px;
   margin: 4rem 0 0;
 }
+.hbspt-form {
+  width: 100%;
+  display: block;
+}
 .hs-form fieldset {
 max-width: none!important;
 }
