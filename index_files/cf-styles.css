@@ -1439,7 +1439,7 @@ strong.emphasis {
   background: #fff;
   padding: 4rem;
   border-radius: 11px;
-  margin: 4rem 0 0;
+  margin: 4rem 0 2rem;
 }
 .hbspt-form {
   width: 100%;
@@ -2308,7 +2308,7 @@ strong.emphasis {
   display: -ms-flexbox;
   display: flex;
   min-height: 530px;
-  padding: 140px 3% 140px;
+  padding: 180px 3% 140px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
