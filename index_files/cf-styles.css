@@ -125,10 +125,14 @@ h1 {
   letter-spacing: -0.05em;
 }
 
+.content-h1 {
+  font-size: 32px;
+}
+
 h2 {
   margin-top: 10px;
   margin-bottom: 24px;
-  font-size: 40px;
+  font-size: 46px;
   line-height: 1.15;
   font-weight: 600;
   letter-spacing: -0.125rem;
@@ -207,6 +211,11 @@ li {
 
 strong {
   color: #7703AE;
+  font-weight: 700;
+}
+
+strong.emphasis {
+  color: inherit;
   font-weight: 700;
 }
 
@@ -1371,6 +1380,22 @@ strong {
   padding: 100px 3%;
 }
 
+.cta-section.tight {
+  padding: 40px 3%;
+}
+
+.cta-section .lead-in {
+  text-align: center;
+}
+
+.cta-section .lead-in .paragraph {
+  margin:0 0 2rem;
+}
+
+.cta-section .lead-in .content-h1 {
+  margin-bottom: .5rem;
+}
+
 .cta-banner {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1404,7 +1429,13 @@ strong {
   -ms-flex-align: center;
   align-items: center;
 }
+.cta-form {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 
+  
 .div-block-6 {
   width: 50%;
 }
@@ -1412,9 +1443,19 @@ strong {
 .cta-h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #4317c0;
+  color: #7703AE;
   font-size: 36px;
   line-height: 1.1;
+}
+
+.cta-h2 .cta-p {
+  display: block;
+  color: #4F5C7A;
+  font-size: 1.2rem;
+  letter-spacing: -0.01rem;
+  font-weight: normal;
+  margin: .5rem 0;
+
 }
 
 .text-span {
@@ -1664,13 +1705,17 @@ strong {
 .solution-options-grid .cell {
   display: inline-block;
   width: 100%;
-  max-width: 375px;
+  max-width: 400px;
   background:#F6f6f6;
   vertical-align: top;
   min-height: 425px;
   padding: 4rem 3.5rem;
   border-radius: 15px;
   margin: 1rem;
+}
+
+.cta-banner .solution-options-grid .cell {
+  background:#fff;
 }
 
 .solution-options-grid .cell.primary {
@@ -1680,6 +1725,10 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
 */  color:#fff;
+}
+
+.solution-options-grid .cell.primary strong {
+  color: #fff;
 }
 
 .solution-options-grid .solution-type {
@@ -1722,6 +1771,20 @@ strong {
   padding-right: 3%;
   padding-bottom: 60px;
   padding-left: 3%;
+}
+
+.pricing-block {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary .pricing-block {
+  border-top: 1px solid rgba(255,255,255,.25);
 }
 
 
@@ -1799,6 +1862,9 @@ strong {
   font-weight: 500;
   letter-spacing: -0.8px;
 }
+.plain .pricing-period {
+  color: #596686;
+}
 
 .price-type.text-white {
   color: #fff;
@@ -1864,6 +1930,10 @@ strong {
   color: #bcc4da;
   font-size: 22px;
   font-weight: 400;
+}
+
+.plain .price-span {
+  color: #333;
 }
 
 .pricing-banner {
@@ -2392,7 +2462,7 @@ strong {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  padding: 30px;
+  padding: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3659,7 +3729,6 @@ text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -4217,7 +4286,7 @@ ul.pricing-package span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 380px;
+  min-height: 180px;
   margin-bottom: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -4256,6 +4325,9 @@ ul.pricing-package span {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.step-wrapper .step.last {
+  margin-bottom: 0;
 }
 
 .bg-step {
@@ -4963,6 +5035,7 @@ ul.pricing-package span {
     justify-content: center;
     text-align: center;
   }
+
   .div-block-6 {
     width: 100%;
   }
