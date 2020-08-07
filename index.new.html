@@ -48,9 +48,18 @@
     </style>
   </head>
   <body data-gr-c-s-loaded="true" class="home-page">
-    <div class="download-success">
+    <div class="alert download-success">
       We've sent you an email with a link to download the guide!  Enjoy reading with your team.
     </div>
+
+    <div class="alert form-company-success">
+      Thank you for reaching out! We'll be in touch to talk about Campfire for your company! 
+    </div>
+
+    <div class="alert form-team-success">
+      Thank you for reaching out! We'll be in touch to learn more about your team! 
+    </div>
+
     <a href="how-to-be-an-antiracist.html" class="banner">
       Download our free discussion guide for <em>How to Be an Antiracist</em>
     </a>
@@ -427,6 +436,16 @@
               if (GetURLParameter("status") == "success") {
               $(".w-form-done").show()
               }
+
+              if (GetURLParameter("form-submit") == "team") {
+                $(".form-team-success").show()
+              }
+
+              if (GetURLParameter("form-submit") == "company") {
+                $(".form-company-success").show()
+              }
+
+
               if (GetURLParameter("status") == "download-success") {
               $(".download-success").show();
               $(".download-success").hide('blind', options, 500);

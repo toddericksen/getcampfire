@@ -291,7 +291,7 @@ strong.emphasis {
   position: absolute;
 }
 
-.download-success {
+.alert {
   font-size: 14px;
   display: none;
   background: #743698;
