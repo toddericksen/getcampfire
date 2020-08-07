@@ -4795,6 +4795,13 @@ ul.pricing-package span {
   padding: 100px 3% 40px;
 }
 
+.works-section.tight .step {
+  margin-bottom: -3rem;
+}
+.works-section.tight .step.last {
+  margin-bottom: 3rem;
+}
+
 .customer-circle-02 {
   position: absolute;
   left: 8%;
