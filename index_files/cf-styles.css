@@ -3279,6 +3279,30 @@ a.book:hover {
   background-color: #f8faff;
 }
 
+
+.bg-element-squish {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: auto;
+  z-index: -1;
+  width: 100%;
+  max-width: 450px;
+  min-height: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 32px;
+  background-color: #f8faff;
+}
+
+.bg-gray {background-color:#f8faff;}
+.bg-yeller {background-color: #FFFDEC;}
+.bg-orange {background-color: #fff7f2;}
+.bg-purple {background-color: #f3efff;}
+.bg-blue {background-color: #ebfbff;}
+.bg-red {background-color: #FEF1F7;}
+
 .bg-element.bg-yellow {
   left: 0%;
   top: auto;
