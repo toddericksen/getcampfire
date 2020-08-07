@@ -60,6 +60,10 @@
       Thank you for reaching out! We'll be in touch to learn more about your team! 
     </div>
 
+    <div class="alert form-general-success">
+      Thank you for reaching out! We'll be in touch to learn more! 
+    </div>
+
     <a href="how-to-be-an-antiracist.html" class="banner">
       Download our free discussion guide for <em>How to Be an Antiracist</em>
     </a>
@@ -444,6 +448,10 @@
 
               if (GetURLParameter("form-submit") == "company") {
                 $(".form-company-success").show()
+              }
+
+              if (GetURLParameter("form-submit") == "general") {
+                $(".form-general-success").show()
               }
 
 

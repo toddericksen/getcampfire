@@ -54,6 +54,9 @@
     <a href="how-to-be-an-antiracist.html" class="banner">
       Download our free discussion guide for <em>How to Be an Antiracist</em>
     </a>
+    <div class="alert form-general-success">
+      Thank you for reaching out! We'll be in touch to learn more! 
+    </div>
     <div data-collapse="medium" data-animation="default" data-duration="400" id="Navbar" data-w-id="8e7d6612-01c7-9bb0-1b73-9c98c9ce27b9" class="navbar w-nav" style="opacity: 1;">
       <div class="navigation-container">
         <div class="navigation-left">
@@ -336,6 +339,10 @@
               $(function(){
               if (GetURLParameter("status") == "success") {
               $(".w-form-done").show()
+              }
+
+              if (GetURLParameter("form-submit") == "general") {
+                $(".form-general-success").show()
               }
               if (GetURLParameter("status") == "download-success") {
               $(".download-success").show();
