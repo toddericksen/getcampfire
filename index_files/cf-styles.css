@@ -5614,6 +5614,19 @@ ul.pricing-package span {
       margin-top: 120px;
     }
 
+  .campfire-logo {
+    display: none;
+  }
+  .w-nav-brand:before {
+    content: "";
+    width: 212px;
+    height: 72px;
+    background-image: url(campfire-logo.svg);
+    display: block;
+    position: relative;
+    top: -15px;
+  }
+
   .popup_content {
     width: 90%;
     left: 5%;
