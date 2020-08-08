@@ -149,6 +149,10 @@ h2 {
   letter-spacing: -0.125rem;
 }
 
+h2 span.break {
+  display: block;
+}
+
 h3 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2208,6 +2212,7 @@ strong.emphasis {
 
 .content-image {
   position: relative;
+  width: 100%;
 }
 
 .content-image.analytics {
@@ -5721,7 +5726,13 @@ ul.pricing-package span {
     margin-right: auto;
   }
   .hero-default {
-    padding-top: 140px;
+    padding-top: 300px;
+  }
+  .nav-link.w--current {
+    background-color: rgba(255,255,255,.75);
+  }
+  .nav-link { 
+    color: rgba(255,255,255,.85);
   }
   .testimonial-card {
     margin-right: 0px;
@@ -6754,6 +6765,15 @@ ul.pricing-package span {
   body {
     width: 100%;
     max-width: 479px;
+  }
+  h2 span.break {
+  display: inline;
+  }
+  .works-section.tight .step {
+    margin-bottom: 1rem;
+  } 
+  .solution-options-grid .cell {
+    margin: 0 0 1rem 0 ;
   }
   .works-section {padding-bottom: 0;}
   #pricingArea {
