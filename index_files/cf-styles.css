@@ -3785,6 +3785,7 @@ text-align: center;
   width: 225px;
   position: relative;
   top: -10px;
+  display: block;
 }
 .navigation-right {
   display: -webkit-box;
@@ -5617,6 +5618,7 @@ ul.pricing-package span {
   .campfire-logo {
     display: none;
   }
+
   .w-nav-brand:before {
     content: "";
     width: 212px;
