@@ -5611,6 +5611,20 @@ ul.pricing-package span {
 }
 
 @media screen and (max-width: 767px) {
+  .cta-form .form {
+  padding: 20px;
+  }
+
+  .hbspt-form {
+    width: 100%;
+    display: block;
+    max-width: 600px;
+  }
+
+  .hs-form fieldset {
+    max-width: 100% !important;
+  }
+
   #intro {
       margin-top: 120px;
     }
