@@ -149,7 +149,7 @@ h2 {
   letter-spacing: -0.125rem;
 }
 
-h2 span.break {
+h1 span.break, h2 span.break {
   display: block;
 }
 
@@ -6795,7 +6795,7 @@ ul.pricing-package span {
     width: 100%;
     max-width: 479px;
   }
-  h2 span.break {
+  h1 span.break, h2 span.break {
   display: inline;
   }
   .works-section.tight .step {
