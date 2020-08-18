@@ -295,6 +295,23 @@ strong.emphasis {
   position: absolute;
 }
 
+.banner-tall {
+  width: 100%;
+  padding: 20px 0 25px;
+  text-align: center;
+  background: #1A2336;
+  color: #fff;
+  display: block;
+  z-index: 1001;
+  position: absolute;
+  font-size: 1rem;
+  letter-spacing: -0.025rem
+}
+
+.banner-tall strong {
+  color: #fff;
+}
+
 .alert {
   font-size: 14px;
   display: none;
