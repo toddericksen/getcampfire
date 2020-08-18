@@ -284,18 +284,9 @@ strong.emphasis {
   margin-right: 30px;
 }
 
-.banner {
-  width: 100%;
-  padding: 15px 0 15px;
-  text-align: center;
-  background: #182135;
-  color: #fff;
-  display: block;
-  z-index: 1001;
-  position: absolute;
-}
 
-.banner-tall {
+
+.banner {
   width: 100%;
   padding: 20px 0 25px;
   text-align: center;
@@ -308,7 +299,7 @@ strong.emphasis {
   letter-spacing: -0.025rem
 }
 
-.banner-tall strong {
+.banner strong {
   color: #fff;
 }
 
