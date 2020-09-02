@@ -240,7 +240,8 @@ strong.emphasis {
   background-image: url("./forest-bg.svg");
   background-position: top center;
   background-repeat: repeat;
-  max-height: 940px;
+  max-height: 1050px;
+  margin-bottom: -150px;
 }
 
 .hero-antiracist {
