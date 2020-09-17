@@ -142,7 +142,7 @@ h1 {
 
 h2 {
   margin-top: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   font-size: 46px;
   line-height: 1.15;
   font-weight: 600;
@@ -2297,23 +2297,36 @@ input[type=range]:focus::-ms-fill-upper {
   margin-right: 3rem;
   width: 180px;
 }
+
 #teamPriceQuote .currency, #teamPriceQuote .units {
   font-size: 1.5rem;
   color: #7b88a8;
 }
+
 #teamPriceQuote .currency {
   position: relative;
   top: -1rem;
   left:-.25rem;
 }
+
 #totalPrice {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: -0.15rem;
 }
+
 .checkoutBtn {
   background: #D23D82;
   color: #fff;
+}
+
+.buy-button {
+  margin-top: 2rem;
+}
+
+.buy-button .button {
+    display: inline-block;
+    line-height: 2.6rem;
 }
 
 .submit-button {
