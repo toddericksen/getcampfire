@@ -41,11 +41,127 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./index_files/apple-touch-icon.png">
     <link href="./index_files/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
     <style>
-    body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    }
-    </style>
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1rem;
+  cursor: pointer;
+  background: #FFCAE2;
+  border-radius: 1rem;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 3rem;
+  background: #D23D82;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.75rem;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #FF9CCA;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1rem;
+  cursor: pointer;
+  background: #FFCAE2;
+  border-radius: 1rem;
+}
+input[type=range]::-moz-range-thumb {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 3rem;
+  background: #D23D82;
+  cursor: pointer;
+  margin-top: -0.75rem;
+}
+
+input[type=range]::-ms-track {
+
+  width: 100%;
+  height: 1rem;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #FFCAE2;
+  border-radius: 1rem;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+.range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.range {
+  width: 100%;
+}
+.bubble {
+  /*background: #2d3958;*/
+  color: #2d3958;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  position: absolute;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3rem;
+}
+
+.bubble span {
+  font-size: .8rem;
+  opacity: .75;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1.25rem;
+  vertical-align: middle;
+}
+
+/*.bubble::after {
+  content: "";
+  position: absolute;  
+  top: -10px;
+  left: calc(50% - 5px);
+  border: 5px solid #000;
+  border-color: transparent transparent #2d3958 transparent;
+}
+*/    </style>
   </head>
   <body data-gr-c-s-loaded="true" class="">
     <div data-collapse="medium" data-animation="default" data-duration="400" id="Navbar" data-w-id="8e7d6612-01c7-9bb0-1b73-9c98c9ce27b9" class="navbar w-nav" style="opacity: 1;">
@@ -73,6 +189,22 @@
         <div class="title-centre">
           <h1 style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="display-heading">Bring your team <span class="break">together with books</span></h1>
           <div style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-details">With Campfire, we give you superpowers to lift your people, spark connection, and drive growth across your team. </div>
+
+          <script src="https://js.stripe.com/v3"></script>
+
+<div class="range-wrap">
+  <input type="range" class="range" name="checkoutUserCount" id="checkoutUserCount" min="1" max="50" value="5">
+  <output class="bubble"></output>
+</div>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button class="button" 
+  id="checkout-button-price_1GzRWHEd6PeBpsE796UBktkr"
+  role="link"
+  type="button"
+>
+  Checkout
+</button>
         </div>
       </div>
     </div>
@@ -82,30 +214,70 @@
             <div class="cta-form">
               <h2>Get your team reading together</h2><p>Campfire works great for teams of any size.  Talk to us about options for yours. </p>
               <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
 
-<input type="number" name="checkoutUserCount" id="checkoutUserCount" />
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button class="button" 
-  id="checkout-button-price_1GzRWHEd6PeBpsE796UBktkr"
-  role="link"
-  type="button"
->
-  Checkout
-</button>
+
+
+
+<!-- <div class="range-slider">
+  <input class="range-slider__range" type="range" value="100" min="0" max="500">
+  <span class="range-slider__value">0</span>
+</div> -->
 
 <div id="error-message"></div>
 
 <script>
+// var rangeSlider = function(){
+//   var slider = document.querySelector('.range-slider'),
+//       range = document.querySelector('.range-slider__range'),
+//       value = document.querySelector('.range-slider__value');
+    
+//   slider.each(function(){
+
+//     value.each(function(){
+//       var value = $(this).prev().attr('value');
+//       $(this).html(value);
+//     });
+
+//     range.on('input', function(){
+//       $(this).next(value).html(this.value);
+//     });
+//   });
+// };
+
+// rangeSlider();
+
+const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val + " <span>Readers</span>";
+
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+
 (function() {
   var stripe = Stripe('pk_live_zgoIfxlFifLhRT8OAipiaj9i00Q892sVNC');
+  var checkoutUserCount = document.getElementById('checkoutUserCount');
+
+
   var checkoutButton = document.getElementById('checkout-button-price_1GzRWHEd6PeBpsE796UBktkr');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
-      var checkoutUserCount = document.getElementById('checkoutUserCount');
       var userCount = parseInt(checkoutUserCount.value);
-      console.log(userCount)
   
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity: userCount}],
