@@ -84,9 +84,9 @@
               <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
+<input type="number" name="checkoutUserCount" id="checkoutUserCount" />
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+<button class="button" 
   id="checkout-button-price_1GzRWHEd6PeBpsE796UBktkr"
   role="link"
   type="button"
@@ -99,13 +99,16 @@
 <script>
 (function() {
   var stripe = Stripe('pk_live_zgoIfxlFifLhRT8OAipiaj9i00Q892sVNC');
-
   var checkoutButton = document.getElementById('checkout-button-price_1GzRWHEd6PeBpsE796UBktkr');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
+      var checkoutUserCount = document.getElementById('checkoutUserCount');
+      var userCount = parseInt(checkoutUserCount.value);
+      console.log(userCount)
+  
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity: 1}],
+      lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity: userCount}],
       mode: 'subscription',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
