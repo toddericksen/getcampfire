@@ -41,133 +41,138 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./index_files/apple-touch-icon.png">
     <link href="./index_files/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
     <style>
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 18px 0;
-  width: 100%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 1rem;
-  cursor: pointer;
-  background: #FFCAE2;
-  border-radius: 1rem;
-}
-input[type=range]::-webkit-slider-thumb {
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 3rem;
-  background: #D23D82;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -0.75rem;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #FF9CCA;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 1rem;
-  cursor: pointer;
-  background: #FFCAE2;
-  border-radius: 1rem;
-}
-input[type=range]::-moz-range-thumb {
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 3rem;
-  background: #D23D82;
-  cursor: pointer;
-  margin-top: -0.75rem;
-}
-
-input[type=range]::-ms-track {
-
-  width: 100%;
-  height: 1rem;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-}
-
-input[type=range]::-ms-fill-lower {
-  background: #FFCAE2;
-  border-radius: 1rem;
-}
-
-input[type=range]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #367ebd;
-}
-
-.range-wrap {
-  position: relative;
-  margin: 0 auto 3rem;
-  width: 100%;
-  max-width: 500px;
-}
-
-.range {
-  width: 100%;
-}
-.bubble {
-  /*background: #2d3958;*/
-  color: #2d3958;
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
-  position: absolute;
-  border-radius: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 3rem;
-}
-
-.bubble span {
-  font-size: .8rem;
-  opacity: .75;
-  text-transform: uppercase;
-  display: inline-block;
-  line-height: 1.25rem;
-  vertical-align: middle;
-}
-
-/*.bubble::after {
-  content: "";
-  position: absolute;  
-  top: -10px;
-  left: calc(50% - 5px);
-  border: 5px solid #000;
-  border-color: transparent transparent #2d3958 transparent;
-}
-*/    </style>
+    input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+    }
+    input[type=range]:focus {
+    outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1rem;
+    cursor: pointer;
+    background: #FFCAE2;
+    border-radius: 1rem;
+    }
+    input[type=range]::-webkit-slider-thumb {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 3rem;
+    background: #D23D82;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.75rem;
+    }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FF9CCA;
+    }
+    input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1rem;
+    cursor: pointer;
+    background: #FFCAE2;
+    border-radius: 1rem;
+    }
+    input[type=range]::-moz-range-thumb {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 3rem;
+    background: #D23D82;
+    cursor: pointer;
+    margin-top: -0.75rem;
+    }
+    input[type=range]::-ms-track {
+    width: 100%;
+    height: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    }
+    input[type=range]::-ms-fill-lower {
+    background: #FFCAE2;
+    border-radius: 1rem;
+    }
+    input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    }
+    input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    }
+    input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+    }
+    input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+    }
+    .range-wrap {
+    position: relative;
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 500px;
+    }
+    .range {
+    width: 100%;
+    }
+    .bubble {
+    color: #2d3958;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3rem;
+    font-size: 1.25rem;
+    letter-spacing: -0.05rem;
+    }
+    .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #teamPriceQuote {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3rem;
+    width: 180px;
+    }
+    #teamPriceQuote .currency, #teamPriceQuote .units {
+    font-size: 1.5rem;
+    color: #7b88a8;
+    }
+    #teamPriceQuote .currency {
+    position: relative;
+    top: -1rem;
+    left:-.25rem;
+    }
+    #totalPrice {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: -0.15rem;
+    }
+    .checkoutBtn {
+    background: #D23D82;
+    color: #fff;
+    }
+    </style>
   </head>
   <body data-gr-c-s-loaded="true" class="">
     <div data-collapse="medium" data-animation="default" data-duration="400" id="Navbar" data-w-id="8e7d6612-01c7-9bb0-1b73-9c98c9ce27b9" class="navbar w-nav" style="opacity: 1;">
       <div class="navigation-container">
         <a href="index.html#" aria-current="page" class="brand w-nav-brand w--current"><img class="campfire-logo" src="./index_files/campfire-dark.svg" alt=""></a>
-
         <div class="navigation-right">
           <nav role="navigation" class="nav-menu w-nav-menu" style="transform: translateY(0px) translateX(0px);">
             <a href="for-companies.html" class="nav-link w-nav-link">Companies</a><a href="for-teams.html" class="nav-link w-nav-link">Teams</a><a href="how-it-works.html" class="nav-link w-nav-link">How It Works</a><a href="our-content.html" class="nav-link w-nav-link">Content</a><a href="https://blog.getcampfire.com" class="nav-link w-nav-link">Blog</a>
@@ -181,186 +186,210 @@ input[type=range]:focus::-ms-fill-upper {
       <div class="w-nav-overlay" data-wf-ignore=""></div>
     </div>
     <div class="hero-default hero-teams">
-
-
       <div class="container">
-
-
         <div class="title-centre">
-          <h1 style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="display-heading">Bring your team <span class="break">together with books</span></h1>
-          <div style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-details">With Campfire, we give you superpowers to lift your people, spark connection, and drive growth across your team. </div>
-
+          <h1 style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="display-heading">Build your Campfire</h1>
+          <div style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-details">Tell us the number of people that will be reading together.  </div>
           <script src="https://js.stripe.com/v3"></script>
+          <div class="range-wrap">
+            <input type="range" class="range" name="checkoutUserCount" id="checkoutUserCount" min="2" max="50" value="5">
+            <output class="bubble"></output>
+          </div>
+          <div class="checkout">
+            <div id="teamPriceQuote"><span class="currency">$</span><span id="totalPrice">5</span><span class="units">/month</span></div>
+            <button class="button checkoutBtn"
+            id="checkout-button-price_1GzRWHEd6PeBpsE796UBktkr"
+            role="link"
+            type="button"
+            >
+            Buy for your group
+            </button>
+          </div>
+          <div id="error-message"></div>
+          <script>
+          const allRanges = document.querySelectorAll(".range-wrap");
+          const totalPrice = document.getElementById("totalPrice");
+          
+          allRanges.forEach(wrap => {
+            const range = wrap.querySelector(".range");
+            const bubble = wrap.querySelector(".bubble");
+          
+            range.addEventListener("input", () => {
+              setBubble(range, bubble);
+            });
+          
+            setBubble(range, bubble);
+          });
 
-<div class="range-wrap">
-  <input type="range" class="range" name="checkoutUserCount" id="checkoutUserCount" min="1" max="50" value="5">
-  <output class="bubble"></output>
-</div>
+          function setBubble(range, bubble) {
+            const val = range.value;
+            const min = range.min ? range.min : 0;
+            const max = range.max ? range.max : 100;
+            const newVal = Number(((val - min) * 100) / (max - min));
+            bubble.innerHTML = val + " <span>People</span>";
+            totalPrice.innerHTML = val * 5;
+            // Sorta magic numbers based on size of the native UI thumb
+            bubble.style.left = `calc(${newVal}% + (${20 - newVal * 0.15}px))`;
+          }
 
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button class="button" 
-  id="checkout-button-price_1GzRWHEd6PeBpsE796UBktkr"
-  role="link"
-  type="button"
->
-  Checkout
-</button>
+          (function() {
+            var stripe = Stripe('pk_live_zgoIfxlFifLhRT8OAipiaj9i00Q892sVNC');
+            var checkoutUserCount = document.getElementById('checkoutUserCount');
+            var checkoutButton = document.getElementById('  checkout-button-price_1GzRWHEd6PeBpsE796UBktkr');
+            checkoutButton.addEventListener('click', function () {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              var userCount = parseInt(checkoutUserCount.value);
+              
+              stripe.redirectToCheckout({
+              lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity:   userCount}],
+              mode: 'subscription',
+              // Do not rely on the redirect to the successUrl for fulfilling
+              // purchases, customers may not always reach the success_url after
+              // a successful payment.
+              // Instead use one of the strategies described in
+              // https://stripe.com/docs/payments/checkout/fulfillment
+              successUrl: window.location.protocol + '//getcampfire.com/  payment-success',
+              cancelUrl: window.location.protocol + '//getcampfire.com/ payment-canceled',
+            }).then(function (result) {
+              if (result.error) {
+                // If `redirectToCheckout` fails due to a browser or network
+                // error, display the localized error message to your customer.
+                var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          })();
+          </script>
         </div>
       </div>
     </div>
-      <div class="cta-section tight">
-        <div class="container">
-          <div class="cta-banner">
-            <div class="cta-form">
-              <h2>Get your team reading together</h2><p>Campfire works great for teams of any size.  Talk to us about options for yours. </p>
-              <!-- Load Stripe.js on your website. -->
-
-
-
-
-<!-- <div class="range-slider">
-  <input class="range-slider__range" type="range" value="100" min="0" max="500">
-  <span class="range-slider__value">0</span>
-</div> -->
-
-<div id="error-message"></div>
-
-<script>
-// var rangeSlider = function(){
-//   var slider = document.querySelector('.range-slider'),
-//       range = document.querySelector('.range-slider__range'),
-//       value = document.querySelector('.range-slider__value');
-    
-//   slider.each(function(){
-
-//     value.each(function(){
-//       var value = $(this).prev().attr('value');
-//       $(this).html(value);
-//     });
-
-//     range.on('input', function(){
-//       $(this).next(value).html(this.value);
-//     });
-//   });
-// };
-
-// rangeSlider();
-
-const allRanges = document.querySelectorAll(".range-wrap");
-allRanges.forEach(wrap => {
-  const range = wrap.querySelector(".range");
-  const bubble = wrap.querySelector(".bubble");
-
-  range.addEventListener("input", () => {
-    setBubble(range, bubble);
-  });
-  setBubble(range, bubble);
-});
-
-function setBubble(range, bubble) {
-  const val = range.value;
-  const min = range.min ? range.min : 0;
-  const max = range.max ? range.max : 100;
-  const newVal = Number(((val - min) * 100) / (max - min));
-  bubble.innerHTML = val + " <span>Readers</span>";
-
-  // Sorta magic numbers based on size of the native UI thumb
-  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
-}
-
-(function() {
-  var stripe = Stripe('pk_live_zgoIfxlFifLhRT8OAipiaj9i00Q892sVNC');
-  var checkoutUserCount = document.getElementById('checkoutUserCount');
-
-
-  var checkoutButton = document.getElementById('checkout-button-price_1GzRWHEd6PeBpsE796UBktkr');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-      var userCount = parseInt(checkoutUserCount.value);
-  
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity: userCount}],
-      mode: 'subscription',
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + '//getcampfire.com/payment-success',
-      cancelUrl: window.location.protocol + '//getcampfire.com/payment-canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
-            </div>
+    <div class="content-section">
+      <div class="container">
+        <div class="step-wrapper">
+          <div class="title-wrap">
+            <h2>What you get</h2>
+            <p>It’s easy to implement the principles of any book on your team with Campfire. Here's a walkthrough of what you get and how it works.</p>
           </div>
-        </div>
-        <div class="fixed-background"></div>
-      </div>
-
-              <div class="footer">
-                <div class="container">
-                  <div class="w-layout-grid footer-grid">
-                    <div id="w-node-7dc5b5ee9d91-b8f5df7e" class="footer-column">
-                      <a href="index.html" aria-current="page" class="footer-logo-link w-inline-block w--current"><img src="./index_files/flame.svg" alt="" class="footer-logo"></a>
-                    </div>
-                    <div id="w-node-7dc5b5ee9d91-b8f5df7ee" class="footer-column">
-                      <p>
-                      <img src="./index_files/campfire-icon-tight.svg" width="200" alt="" /></p>
-                      <p>Read together. Spark connection. Ignite growth.</p>
-                    </div>
-                  </div>
-                  <div class="legal-block">
-                    <div class="legal-text">© 2020 Campfire, LLC.. </div>
-                    <div class="social-links">
-                      <a href="https://twitter.com/get_campfire" class="social-link w-inline-block"><img src="./index_files/twitter.svg" alt=""></a>
-                      <a href="https://www.instagram.com/getcampfire/?hl=en" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755ab49aa7d556_instagram.svg" alt=""></a>
-                      <a href="https://www.facebook.com/getcampfireco" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755a27a8a7d554_facebook.svg" alt=""></a>
-                      <a href="https://www.linkedin.com/company/getcampfire/" class="social-link w-inline-block"><img src="./index_files/linkedin.svg" alt=""></a>
-                    </div>
-                  </div>
+          <div class="step">
+            <div class="w-layout-grid grid-works">
+              <div class="content-wrap">
+                <h2 class="content-h1">Accountability <span class="break">for reading the book</span><!-- Keep people on<span class="break">pace in the book</span> --></h2>
+                <p class="paragraph">We create a reading schedule customized to your book that keeps everyone accountable to get their reading and stay on pace. </p>
+              </div>
+              <div id="w-node-55cd705fd95b-79a7d51f" class="counter-wrap">
+                <div class="stop-counter">
+                  <div>1</div>
                 </div>
               </div>
-              <a href="#Navbar" data-w-id="e1be651e-a752-affb-1e61-03cdaa468130" class="return-top w-inline-block" style="transform: translate3d(0px, 0px, 0px) scale3d(0.5, 0.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"><img src="./index_files/5e44f5da6e788abb7acd80d4_Chevron.svg" alt="" class="arrow-up"></a>
-              <script
-              src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
-              integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
-              crossorigin="anonymous"></script>
-              <script src="index_files/webflow.ef4666458.js" type="text/javascript"></script>
-              <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-              <div id="point-jawn" style="z-index: 2147483647;"></div>
-              <script type="text/javascript">
-              function GetURLParameter(sParam) {
-              var sPageURL = window.location.search.substring(1);
-              var sURLVariables = sPageURL.split('&');
-              for (var i = 0; i < sURLVariables.length; i++)
-              {
-              var sParameterName = sURLVariables[i].split('=');
-              if (sParameterName[0] == sParam)
-              {
-              return sParameterName[1];
-              }
-              }
-              }
+              <div id="w-node-7b18c687854f-79a7d51f" class="works-image-wrap image-shadow">
+                <img src="./index_files/reading-reminders.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="w-layout-grid grid-works">
+              <div id="w-node-e5911d10648d-79a7d51f" class="works-image-wrap image-shadow">
+                <img src="./index_files/sparks-example.png" alt="">
+              </div>
+              <div id="w-node-e5911d10648b-79a7d51f" class="counter-wrap">
+                <div class="stop-counter purple-step">
+                  <div>2</div>
+                </div>
+              </div>
+              <div class="content-wrap">
+                <h2 class="content-h1">Highlights from the best <span class="break">passages of the book</span></h2>
+                <p class="paragraph">Each quote from the book comes with a prompt designed for reflection, application and discussion. </p>
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="w-layout-grid grid-works">
+              <div class="content-wrap">
+                <h2 class="content-h1">Meaningful agendas <span class="break">with five minutes of prep</span></h2>
+                <p class="paragraph">Our agendas help you drive meaningful discussion. Choose one of our icebreakers, a reflection question and a discussion question or create your own.</p>
+              </div>
+              <div id="w-node-55cd705fd95b-79a7d51f" class="counter-wrap">
+                <div class="stop-counter">
+                  <div>3</div>
+                </div>
+              </div>
+              <div id="w-node-7b18c687854f-79a7d51f" class="works-image-wrap">
+                <img src="./index_files/weekly-summary.png" alt="">
+              </div>
+            </div>
+          </div>
+          
+          <div class="line">
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="container">
+          <div class="title-wrap">
+            <h2>Fair refunds if you don't love it</h2>
+            <p>Bad refund policies are infuriating. You feel like the company is just trying to rip you off. We never want our customers to feel that way, so our refund policy is simple: If you’re ever unhappy with us for any reason, just contact our support team and we’ll take care of you.</p>
+          </div>
+        </div>
+        <div class="container" style="padding-bottom: 8rem;">
+          <div class="bg-container">
+            <div class="w-layout-grid testimonial-grid">
+            <div id="w-node-c10fb3ce5c4c-ada7d515" data-w-id="6e344c21-abf3-6eba-7bba-c10fb3ce5c4c" class="testimonial-card">
+              <p>If you were just charged for your next month of service but you meant to cancel, we’re happy to refund that extra charge.</p>
+            </div>
+            <div id="w-node-79bc4bceeb34-ada7d515" data-w-id="a2729216-52b1-41c2-6045-79bc4bceeb34" class="testimonial-card">
+              <p>If you forgot to cancel your account a couple months ago and you haven’t used it since then, we’ll give you a full refund for a few back months. No problem.</p>
+            </div>
+            <div id="w-node-84de0c540bfb-ada7d515" data-w-id="3c08c271-58d0-5131-de42-84de0c540bfb" class="testimonial-card">
+              <p>If you tried one of our products for a couple months and you just weren’t happy with it, you can have your money back.</p>
+            </div>
+          </div>
+          <div class="bg-element bg-customer" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          </div>
+        </div>
+      </div>
 
-              </script>
-              <script>
-              window.intercomSettings = {
-              app_id: "eu1ht16z"
-              };
-              </script>
-              <script>
-              // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/eu1ht16z'
-              (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/eu1ht16z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-              </script>
-            </body>
-          </html>
+    <div class="footer">
+      <div class="container">
+        <div class="w-layout-grid footer-grid">
+          <div id="w-node-7dc5b5ee9d91-b8f5df7e" class="footer-column">
+            <a href="index.html" aria-current="page" class="footer-logo-link w-inline-block w--current"><img src="./index_files/flame.svg" alt="" class="footer-logo"></a>
+          </div>
+          <div id="w-node-7dc5b5ee9d91-b8f5df7ee" class="footer-column">
+            <p>
+            <img src="./index_files/campfire-icon-tight.svg" width="200" alt="" /></p>
+            <p>Read together. Spark connection. Ignite growth.</p>
+          </div>
+        </div>
+        <div class="legal-block">
+          <div class="legal-text">© 2020 Campfire, LLC.. </div>
+          <div class="social-links">
+            <a href="https://twitter.com/get_campfire" class="social-link w-inline-block"><img src="./index_files/twitter.svg" alt=""></a>
+            <a href="https://www.instagram.com/getcampfire/?hl=en" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755ab49aa7d556_instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/getcampfireco" class="social-link w-inline-block"><img src="./index_files/5e7adffc6e755a27a8a7d554_facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/company/getcampfire/" class="social-link w-inline-block"><img src="./index_files/linkedin.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#Navbar" data-w-id="e1be651e-a752-affb-1e61-03cdaa468130" class="return-top w-inline-block" style="transform: translate3d(0px, 0px, 0px) scale3d(0.5, 0.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"><img src="./index_files/5e44f5da6e788abb7acd80d4_Chevron.svg" alt="" class="arrow-up"></a>
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+    integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
+    crossorigin="anonymous"></script>
+    <script src="index_files/webflow.ef4666458.js" type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <div id="point-jawn" style="z-index: 2147483647;"></div>
+    
+    <script>
+    window.intercomSettings = {
+    app_id: "eu1ht16z"
+    };
+    </script>
+    <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/eu1ht16z'
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/eu1ht16z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+  </body>
+</html>
