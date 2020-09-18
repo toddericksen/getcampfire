@@ -105,7 +105,9 @@
           }
 
           (function() {
+
             var stripe = Stripe('pk_test_2Bgpz9j7dpNQFpcPt2CrhKYt00PCnLwQcM');
+            // var stripe = Stripe('pk_live_zgoIfxlFifLhRT8OAipiaj9i00Q892sVNC');
             var checkoutUserCount = document.getElementById('checkoutUserCount');
             var checkoutButton = document.getElementById('checkout-button-price_1GzRWHEd6PeBpsE796UBktkr');
             
@@ -115,7 +117,9 @@
               var userCount = parseInt(checkoutUserCount.value);
               
               stripe.redirectToCheckout({
-              lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity: userCount}],
+                // price_1GzRWHEd6PeBpsE796UBktkr
+                
+              lineItems: [{price: 'price_1GrpRvEd6PeBpsE7EJ6fKndl', quantity: userCount}],
               mode: 'subscription',
               // Do not rely on the redirect to the successUrl for fulfilling
               // purchases, customers may not always reach the success_url after
