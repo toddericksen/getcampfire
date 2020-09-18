@@ -115,7 +115,7 @@
               var userCount = parseInt(checkoutUserCount.value);
               
               stripe.redirectToCheckout({
-              lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity:   userCount}],
+              lineItems: [{price: 'price_1GzRWHEd6PeBpsE796UBktkr', quantity: userCount}],
               mode: 'subscription',
               // Do not rely on the redirect to the successUrl for fulfilling
               // purchases, customers may not always reach the success_url after
