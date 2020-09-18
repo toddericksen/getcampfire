@@ -10,11 +10,11 @@
     gtag('config', 'UA-165632030-1');
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Campfire - Culture, Connection, Focus</title>
-    <meta content="We curate books to activate your company culture, give your team the space for reading, and facilitate conversations that fuel impact." name="description">
-    <meta content="Campfire" property="og:title">
-    <meta content="We curate books to activate your company culture, give your team the space for reading, and facilitate conversations that fuel impact." property="og:description">
-    <meta property="og:url" content="https://getcampfire.com/" />
+    <title>Campfire - Checkout </title>
+    <meta content="Buy Campfire for your team">
+    <meta content="Campfire - Checkout " property="og:title">
+    <meta content="Buy Campfire for your team" property="og:description">
+    <meta property="og:url" content="https://getcampfire.com/checkout.html" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://getcampfire.com/index_files/fb_campfire.png" />
     <meta content="summary" name="twitter:card">
@@ -105,7 +105,7 @@
           }
 
           (function() {
-            var stripe = Stripe('pk_live_zgoIfxlFifLhRT8OAipiaj9i00Q892sVNC');
+            var stripe = Stripe('pk_test_2Bgpz9j7dpNQFpcPt2CrhKYt00PCnLwQcM');
             var checkoutUserCount = document.getElementById('checkoutUserCount');
             var checkoutButton = document.getElementById('checkout-button-price_1GzRWHEd6PeBpsE796UBktkr');
             
@@ -122,7 +122,7 @@
               // a successful payment.
               // Instead use one of the strategies described in
               // https://stripe.com/docs/payments/checkout/fulfillment
-              successUrl: window.location.protocol + '//app.getcampfire.com/',
+              successUrl: window.location.protocol + '//app.getcampfire.com/slack/stripe_success',
               cancelUrl: window.location.protocol + '//getcampfire.com/checkout.html?status=cancelled',
             }).then(function (result) {
               if (result.error) {
